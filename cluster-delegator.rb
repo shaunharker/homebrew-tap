@@ -5,6 +5,8 @@ class ClusterDelegator < Formula
   version "1.1"
   sha256 "21697f52630709dc448e776d2ded96216fd1a6c03ea1fb4ff90982a261f5fa14"
 
+  depends_on "boost" => :build
+
   def install
     system "./install.sh", "--prefix=#{prefix}"
   end
