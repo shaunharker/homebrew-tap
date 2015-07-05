@@ -7,6 +7,7 @@ class ClusterDelegator < Formula
 
   depends_on "boost" => :build
   depends_on "cmake" => :build
+  depends_on "openmpi" => :build
 
   def install
     system "./install.sh", "--prefix=#{prefix}"
